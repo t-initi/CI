@@ -1,0 +1,21 @@
+"niveau" :{
+	"Licence" : "Informatique",
+
+	"annees": [
+		{
+			"nom" : "L1",
+			"description" : "L1 MIPI"
+		}
+
+		{
+			"nom" : "L2",
+			"description" : "L2 Informatique"
+		}
+
+		{
+			"nom" : "L3",
+			"description" : "L3 Informatique"
+		}
+
+	]
+}

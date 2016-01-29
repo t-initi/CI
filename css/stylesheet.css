@@ -1,0 +1,328 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+	width:95%;
+	background: white;
+	color: white;
+	font-size: 1.0em;
+	font-family: Times;
+	color:black;
+	margin: 0px;
+	padding: 0px;
+	position: center;
+	margin: 10px auto;
+}
+header, nav, section{
+	display: block;
+}
+
+#mainHeader{
+	border-bottom: 5px solid #880000;
+	width:100%;
+	font-size: 0.8em;
+	color: #880000 ;
+	font-style: Georgia;
+	margin-top: 0px;
+	text-align: right;
+	clear:both;
+}
+
+
+#main_section{ 
+	margin: 10px auto;
+	min-height:800px; 
+	background: #E0E0E0 ;
+	width: 1150px;
+	
+}
+#navList{
+	margin: 0px;
+	height: 30px;
+	
+}
+#navList ul{
+	margin: 5px ;
+}
+
+#navList li{
+	list-style: none;
+	display: inline-block;
+	border-right: 1px #880000;
+	width: 130px;
+	background: white;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+#navList a{
+	color: black;
+	text-decoration: none;
+}
+#navList li:hover{
+		background: #880000;
+		color: white;
+}
+#navList a:hover{
+	color:white;
+}
+#head1{
+	background: #880000;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	clear:both;
+}
+#signup_form{
+	border:1px solid #ff6600;
+}
+#signup_form form {
+	border: 1px solid black;
+	background: #B8B8B8 ;
+
+}
+#page_option{
+	clear:both;
+	color: #ff6600;
+	text-align: right;
+	font-weight: bold;
+	background-color: black;
+	padding-bottom: 1px;
+	margin: 0px;
+}
+#page_option a{
+	color: white;
+}
+
+#club_settings{
+	min-width: 1000px;
+	margin: 20px auto;
+	text-align: left;
+	border: 1px solid #880000;
+}
+#button_settings{
+	text-align:center;
+}
+#main_image{
+float:left;
+clear:both;
+width:100%;
+border: 1px #880000 solid;
+	margin: 10px auto;
+
+}
+#main_image img{
+	width:100%;
+	height: 300px;
+
+}
+
+#right_div, #center_div, #left_div{
+display: inline-block;
+width: 400px;
+float: left;
+border:1px #909090 solid;
+margin-right:5px;
+margin-left:5px;
+}
+
+.title{
+	text-align:center;
+	color: white;
+	height:30px;
+	font-weight:bold;
+	border:2px #909090 solid;
+	background: #C00000 ;
+}
+#navChapter{
+	width: auto;
+
+	margin: 10px auto;
+	overflow: auto;
+}
+#titre{
+	display: inline-block;
+	width: 59%;
+	text-align:center;
+	color: white;
+	height:30px;
+	font-weight:bold;
+	border:1px #909090 solid;
+	background: #C00000 ;
+	float:left;
+
+}
+
+.prevChapt, .nextChapt{
+	display: inline-block;
+	width:20%;
+	margin:0px;
+	height:32px;
+	font-size: 16px;
+	font-weight:bold;
+	float: left;
+	border-collapse: collapse;
+}
+.prevChapt:hover{
+	background: #FF3300;
+	border-color: white;
+	color: white;
+}
+.nextChapt:hover{
+	background: #006600;
+	border-color: white;
+	color: white;
+}
+
+
+
+
+
+#chaptNum{
+	margin-top: 20px;
+}
+
+#welcome_div{
+	width: 820px;
+	border: 2px black solid;
+	margin: 5px auto;
+	float: left;
+	clear:both;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#user_profile{
+	width:270px; 
+	border: 1px solid black;
+	float:left;
+}
+#userdetails{
+	width: 540px;
+	display: inline-block;
+	border: 2px black solid;
+	margin: 5px auto;
+	margin-left: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	float: left;
+}
+
+#connect_forms{
+	clear:left;
+	display: inline-block;
+	background: #880000;
+	width: 370px;
+	min-height: 140px;
+	max-height: 200px;
+	padding:10px;
+	margin: 5px auto;
+	border: 1px solid #202020;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;	
+}
+
+#usr_img{
+	clear:left;
+	display: inline-block;
+	background: #880000;
+	width: 370px;
+	min-height: 250px;
+	max-height: 300px;
+	padding:10px;
+	margin: 5px auto;
+	border: 1px solid #202020;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;	
+}
+#connect_forms form{
+	border:2px #400000 solid;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#connect_forms form fieldset{
+	border:none;
+	margin: 5px auto;
+	text-align: center;
+}
+#connect_forms form fieldset legend{
+	text-align: center;
+	font-weight: bolder;
+	text-align: right;
+}
+#infos{
+	clear:both;
+
+}
+.message{
+text-align: center;
+ color: blue; 
+ width: 95%;
+  margin: 20px auto; 
+  border: 1px blue solid; 
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+.message_error{
+	text-align: center;
+ color: red; 
+ width: 95%;
+  margin: 20px auto; 
+  border: 2px blue solid; 
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#reader{
+
+	width: 90%;
+	margin: 15px auto;
+	text-align: left;
+}
+
+
+#reader section{
+	margin-top: 15px;
+	margin-bottom: 20px;
+	display:block;
+	
+	border-radius: 2px;
+	line-height: 30px;
+	//word-spacing: 8px;
+	-moz-columns: 100px 3;
+}
+#reader section p{
+	text-indent: 50px;
+}
+
+#reader header{
+	text-align:center;
+}
+
+#intro_img{
+	margin: 5px auto;
+	width: 610px;
+}
+.chapitre{
+	margin-bottom: 20px;
+}
+.chapitre h2{
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	text-decoration: underline;
+	font-size: 30px;
+}
+#carte{
+	width: 100%;
+	vertical-align: 5px;
+}

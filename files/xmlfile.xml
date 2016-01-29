@@ -1,0 +1,18 @@
+<niveau>
+	<annee>
+			<nom>L1</nom>
+			<description>L1 MIPI</description>
+	</annee>
+
+
+	<annee>
+			<nom>L2</nom>
+			<description>L2 Informatiques</description>
+	</annee>
+
+	<annee>
+			<nom>L3</nom>
+			<description>L3 Informatique</description>
+	</annee>
+
+</niveau>

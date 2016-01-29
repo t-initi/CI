@@ -1,0 +1,20 @@
+<form id='signUpForm' action='form_validator.inc.php' method='get'>
+			<fieldset><legend>Sign Up</legend>
+			
+			<table >
+			<tr><th>Id : </th> <td><input type='text' name='usr_id' id='usr_id' size='30'/></td></tr>
+			<tr><th>Pseudo : </th> <td><input type='text' name='usr_pseudo' id='usr_pseudo' size='30'/></td></tr>
+			<tr><th>Mot de passe : </th><td><input type='password' name='usr_mdp' id='usr_mdp' size='30' /></td></tr>
+			<tr><th>Email : </th><td><input type='text' name='usr_email'  size='30'/></td></tr>
+			<tr><th>Category : </th>
+				<td><select name= 'type_user' id= 'type_user' >
+						<option name='Parent' value="Parent" >Parent</option>
+						<option name='Animateur' value="Animateur" >Animateur</option>
+				</select></td>
+			</tr>
+			<tr ><td></td><td><input type='submit' value='Valider' name='valid_signup' id='valid_signup' size='30'/></td></tr>
+			</table>
+
+			
+			</fieldset>
+</form>

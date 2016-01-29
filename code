@@ -1,0 +1,91 @@
+	<!--div id="region_form"><h2>Formulaire</h2>
+			<form  action='#' method='get'>
+				<table>
+				<tr><td>Région : </td> <td><input type='text' name='region' id='region' /></td></tr>
+				<tr><td>Département : </td><td><input   type='password' name='departement' id='departement'/></td></tr>
+				<tr><td>Commune : </td><td><input type='text' name='commune' name='commune'/></td></tr>
+				</table>
+			<input type='submit' value='Valider' name='valid_signup' onClick="generator()"/>
+		</form>
+		</div -->
+
+		<!--form>
+			<p> 
+				<input type="submit" name="gen_xml" id="gen_xml" value="Generate XML File" onclick="generateXML()"/> | 
+				<input type="submit" name="gen_json" id="gen_json" value="Generate JSON File" onclick="generateJSON()"/> | 
+				<input type="submit" name="gen_html" id="gen_html" value="Generate HTML File" onclick="generateHtml()"/> |
+				<input type="submit" name="gen_txt" id="gen_txt" value="Generate Text File" onclick="generateText()" /> 
+			</p>
+		</form -->
+
+
+			<script language="Javascript" type="text/javascript">
+
+		function generateText(){
+			var hr = new XMLHttpRequest();
+			var file = "textfile.txt";
+
+			hr.open("GET",file,true);
+			hr.send();
+			hr.onreadystatechange = function(){
+				if(hr.readyState == 4 && hr.status==200){
+					var resp = hr.responseText;
+					document.getElementById("status").innerHTML =resp;
+				}
+			}
+
+		}
+
+		function generateHtml(){
+			var hr = new XMLHttpRequest();
+			var file = "htmlfile.html";
+
+			hr.open("GET",file,true);
+			hr.send();
+			hr.onreadystatechange = function(){
+				if(hr.readyState == 4 && hr.status==200){
+					var resp = hr.responseText;
+					document.getElementById("status").innerHTML =resp;
+				}
+			}
+		}
+
+		function generateJSON(){
+			var hr = new XMLHttpRequest();
+			var file = "jsonfile.json";
+
+			hr.open("GET",file,true);
+			hr.send();
+			hr.onreadystatechange = function(){
+				if(hr.readyState == 4 && hr.status==200){
+					var resp = hr.responseText;
+					document.getElementById("status").innerHTML =resp;
+				}
+			}
+		}
+
+		function generateXML(){
+			var hr = new XMLHttpRequest();
+			var file = "xmlfile.xml";
+			var txt,i,j,x;
+
+			
+			hr.onreadystatechange = function(){
+				if(hr.readyState == 4 && hr.status==200){
+					var resp = hr.responseXML;
+					x=resp.getElementsByTagName("niveau");
+					/*for(i=0; i< x.length;i++){
+					var annee = x[i];
+						for(j=0; i< annee.length;i++){
+							txt = txt + annee[j].childNodes[0] + "<br />";
+							txt = txt + annee[j].childNodes[1] + "<br />";
+						}	
+					}*/
+					document.getElementById("status").innerHTML = x[0];
+				}
+			}
+
+			hr.open("GET",file,true);
+			hr.send();
+		}
+		</script>
